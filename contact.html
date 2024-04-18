@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        form {
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .success-message {
+            margin-top: 10px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Favorite Vacations</h1>
+        <nav>
+            <ul>
+                <li><a href="#beach">Beach</a></li>
+                <li><a href="#mountains">Mountains</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+
+    </div>
+
+    <form id="feedbackForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br>
+
+        <input type="submit" value="Submit Feedback">
+        <div class="success-message" id="successMessage" style="display: none;">Feedback submitted successfully</div>
+    </form>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            submitFeedback();
+        });
+
+        function submitFeedback() {
+            // Simulate submission (you can replace this with actual submission code)
+            // Here, we just display the success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Reset form after submission (optional)
+            document.getElementById('feedbackForm').reset();
+        }
+    </script>
+</body>
+
+</html>

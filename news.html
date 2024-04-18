@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        th {
+            height: 50px;
+            background-color: bisque;
+        }
+
+        tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        tr:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Favorite Vacations</h1>
+        <nav>
+            <ul>
+                <li><a href="#beach">Beach</a></li>
+                <li><a href="#mountains">Mountains</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="news.html" class="active">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/FphUgosXoAAtZjE.jpg" alt="Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/FuQPMqJWAAA-Jk3.jpg" alt="Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/GAInah-XgAA2Sae.jpg" alt="Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/GCxMgmbXMAAbD_5.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/GJtJO5pWgAAyYfS.jpg" alt="Photo 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/Student Center.jpg" alt="Photo 6">
+        </div>
+        <div class="gallery-item">
+            <img src="images/FkXN1aNXgAE3BnE.jpg" alt="Photo 7">
+        </div>
+        <div class="gallery-item">
+            <img src="images/FpgG4xdWYAABIvH.jpg" alt="Photo 8">
+        </div>
+        <div class="gallery-item">
+            <img src="images/Fv8W6t7WAAcE6Lp.jpg" alt="Photo 9">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+</body>
+
+</html>
